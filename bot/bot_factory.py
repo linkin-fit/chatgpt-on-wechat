@@ -43,4 +43,8 @@ def create_bot(bot_type):
     elif bot_type == const.CLAUDEAI:
         from bot.claude.claude_ai_bot import ClaudeAIBot
         return ClaudeAIBot()
+    elif bot_type == const.BING:
+        # BingAI 网页端web接口
+        from bot.bing.bing_bot import BingBot
+        return BingBot()
     raise RuntimeError

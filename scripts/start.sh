@@ -11,6 +11,6 @@ if [ ! -f "${BASE_DIR}/nohup.out" ]; then
 echo "create file  ${BASE_DIR}/nohup.out"
 fi
 
-nohup python3 "${BASE_DIR}/app.py" & tail -f "${BASE_DIR}/nohup.out"
+nohup ~/anaconda3/envs/py37/bin/python3 "${BASE_DIR}/app.py" & tail -f "${BASE_DIR}/nohup.out"
 
 echo "Chat_on_webchat is starting，you can check the ${BASE_DIR}/nohup.out"
